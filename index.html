@@ -9,8 +9,83 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
-    
-    
+    <main class="mt-3">
+        <header class="mt-5">
+            <h1 class="text-center fw-bold display-5">My Monthly Budget</h1>
+        </header>
+        <div class="container">
+            <div class="row  m-3">
+                <div class="col-md-6 col-sm-12 mt-2">
+                    <!-- bank-photo  -->
+                    <div class="mx-3 mb-5">
+                        <img width="100%" height="700px" src="./images/maney.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 mt-2">
+                    <div class=" mx-3 p-4 mb-5 calculation">
+                        <!-- income part  -->
+                        <div>
+                            <h3 class="w-100 text-center mb-3">Income</h3>
+                            <div class="mb-3 d-flex align-items-center">
+                                <span>Income:</span>
+                                <input type="text" class="form-control ms-2" id="total-income" placeholder="00" >
+                            </div>
+                        </div>
+                        <!-- expenses part  -->
+                        <div>
+                            <h3 class="w-100 text-center mb-3">Expenses</h3>
+                            <div class="mb-3 d-flex align-items-center">
+                                <span class="ms-3">Food:</span>
+                                <input type="text" class="form-control ms-2" id="food-cost" placeholder="00" >
+                            </div>
+                            <div class="mb-3 d-flex align-items-center">
+                                <span class="ms-3">Rent:</span>
+                                <input type="text" class="form-control ms-2" id="rent-cost" placeholder="00" >
+                            </div>
+                            <div class="mb-3 d-flex align-items-center">
+                                <span>Clothes:</span>
+                                <input type="text" class="form-control ms-2" id="cloths-cost" placeholder="00" >
+                            </div>
+                        </div>
+                        <!-- calculate button  -->
+                        <div class="text-center mt-4">
+                            <button id="calculate-btn" class="btn bg-info px-5">Calculate </button>
+                        </div>
+                        <!-- error message  -->
+                        <!-- <div class="text-center">
+                            <small id="negative-alert-1" class="text-danger">You can't enter negative value. Please enter positive value.</small>
+                            <small id="string-alert" class="text-danger">You can't enter string. Please enter positive value.</small>
+                            <small id="bigger-expenses" class="text-danger">You can't spend more than you earn. </small>
+                        </div> -->
+                        <!-- expenses and balance output part  -->
+                        <div class="text-center my-4">
+                            <h5 class="mb-3">Total Expenses:<span id="total-expenses" class="ms-2">00</span></h5>
+                            <h5>Balance:<span id="balance" class="ms-2">00</span></h5>
+                        </div>
+                        <!-- percentage and save button here  -->
+                        <div class="d-flex justify-content-center align-items-center">
+                            <span>Save:</span>
+                            <input type="text" class="form-control mx-2" id="percentage" placeholder="00" >
+                            <span>%</span>
+                            <button id="save-btn" class="btn bg-info ms-2 w-100">Save</button>
+                        </div>
+                        <!-- anoteher error message  -->
+                        <!-- <div class="text-center">
+                            <small id="bigger-saving" class="text-danger">you can't save more than you have.</small>
+                            <small id="negative-alert-2" class="text-danger">Please enter positive value under hundred.</small>
+
+                        </div> -->
+                        <!-- saving and remaining amount output part  -->
+                        <div class="text-center my-4">
+                            <h5 class="mb-3">Saving Amount:<span id="saving-amount" class="ms-2">00</span></h5>
+                            <h5>Remaining Balance:<span id="remaining-balance" class="ms-2">00</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
 <!-- bootstrap Js link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
