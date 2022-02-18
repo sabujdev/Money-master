@@ -30,7 +30,7 @@ balance.innerText = remainingBalance;
 })
 
 
-
+// percentage and saving
 document.getElementById('save-btn').addEventListener("click",function(){
     let parentage = percentage.value
  if(remainingBalance > 0 && parentage <= 100 && parentage > 0){

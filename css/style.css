@@ -1,7 +1,24 @@
 header h1 {
-  color: rgb(3, 186, 189);
+  color: rgb(7, 165, 165);
 }
 
 .calculation {
   background-color: rgb(230, 227, 227);
+}
+
+/* media query for responsive very small device  */
+@media only screen and (max-width: 480px) {
+  .cash-flow {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .cash-flow {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .cash-flow {
+    width: 98%;
+  }
 }
