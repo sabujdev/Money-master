@@ -17,10 +17,14 @@ let clothesCostAmount = Number(clothesCost.value) ;
 
 if(incomeAmount > 0 && foodCostAmount > 0 && clothesCostAmount > 0){
     let totalCost = foodCostAmount + rentCostAmount + clothesCostAmount;
- remainingBalance = incomeAmount - totalCost;
+if( incomeAmount > totalCost){
+    remainingBalance = incomeAmount - totalCost;
 
-totalExpanse.innerText = totalCost;
-balance.innerText = remainingBalance;
+    totalExpanse.innerText = totalCost;
+    balance.innerText = remainingBalance;
+}else{
+    alert('Your income amount  is less than ')
+}
 
 
 }else{
@@ -30,11 +34,10 @@ balance.innerText = remainingBalance;
 })
 
 
-// percentage and saving
 document.getElementById('save-btn').addEventListener("click",function(){
     let parentage = percentage.value
  if(remainingBalance > 0 && parentage <= 100 && parentage > 0){
-let savings = (remainingBalance / 100) *  Number(parentage);
+let savings = calculateSaving(parentage , remainingBalance);
 let balanceAfterSavings = remainingBalance - savings;
 
 document.getElementById("saving-amount").innerText = savings;
@@ -44,3 +47,10 @@ document.getElementById("remaining-balance").innerText = balanceAfterSavings;
      alert("You don't have sufficient balance!")
  }
 })
+
+
+// percentage and saving
+function calculateSaving( parentage, remainingBlance){
+    let result =(remainingBalance / 100) *  Number(parentage);
+    return result;
+}
