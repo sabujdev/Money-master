@@ -32,9 +32,9 @@ balance.innerText = remainingBalance;
 
 
 document.getElementById('save-btn').addEventListener("click",function(){
-    let parcentage = percentage.value
- if(remainingBalance > 0 && parcentage <= 100 && parcentage > 0){
-let savings = (remainingBalance / 100) *  Number()
+    let parentage = percentage.value
+ if(remainingBalance > 0 && parentage <= 100 && parentage > 0){
+let savings = (remainingBalance / 100) *  Number(parentage);
 let balanceAfterSavings = remainingBalance - savings;
 
 document.getElementById("saving-amount").innerText = savings;
