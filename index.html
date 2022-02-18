@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>money master</title>
+    <!-- css link  -->
+    <link rel="stylesheet" href="./css/style.css">
     <!-- bootstrap css link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
@@ -21,8 +23,8 @@
                         <img width="100%" height="700px" src="./images/maney.jpeg" alt="">
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12 mt-2">
-                    <div class=" mx-3 p-4 mb-5 calculation">
+                <div class="col-md-6 col-sm-12 mt-2 calculation">
+                    <div class=" mx-3 p-4 mb-5 ">
                         <!-- income part  -->
                         <div>
                             <h3 class="w-100 text-center mb-3">Income</h3>
@@ -49,7 +51,7 @@
                         </div>
                         <!-- calculate button  -->
                         <div" class="text-center mt-4">
-                            <button onclick="calculate()" id="calculate-btn" class="btn bg-info px-5">Calculate </button>
+                            <button  id="calculate-btn" class="btn bg-info px-5">Calculate </button>
                         </div>
                     
                         <!-- expenses and balance output part  -->
@@ -60,7 +62,7 @@
                         <!-- percentage and save button here  -->
                         <div class="d-flex justify-content-center align-items-center">
                             <span>Save:</span>
-                            <input type="number" class="form-control mx-2" id="percentage" placeholder="Savging Amount" >
+                            <input type="number" class="form-control mx-2" id="percentage" placeholder="Saving Amount" >
                             <span>%</span>
                             <button id="save-btn" class="btn bg-info ms-2 w-100">Save</button>
                         </div>
